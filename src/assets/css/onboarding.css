@@ -1,0 +1,110 @@
+.onboard{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.59);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.onboard .box {
+    height: 400px;
+    border-radius: 16px;
+    background-color: white;
+    color: #000;
+    position: relative;
+}
+
+.btn-circle-next,.btn-circle-prev{
+    position: absolute;
+    z-index: 11111;
+    top: 48%;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 50%;
+}
+.btn-circle-next{
+    right: -25px;
+}
+.btn-circle-prev{
+    left: -25px;
+}
+
+.btn-circle-next:hover,.btn-circle-prev:hover{
+    background-color: white;
+}
+
+.onboard .box .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.onboard .box .info p {
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+
+.onboard .box .info .next{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    padding: 2rem;
+}
+.onboard .box .info .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  0 0 0 2rem;
+}
+
+
+.onboard .box .info .circle .cir{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(34, 228, 248, 0.45);
+    border-radius: 50%;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.onboard .box .info .circle .cir:hover{
+    background-color: rgba(34, 228, 248, 1);
+}
+
+.onboard .box .info .circle .cir.active{
+    background-color: rgba(34, 228, 248, 1);
+    transform: scale(1.1);
+}
+
+.onboard .box .info .btn-next{
+    background-color: #0aade2;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.onboard .images{
+    padding: 0;
+}
+.onboard .images img{
+    height: 400px;
+    padding: 0;
+    width: 100%;
+}
